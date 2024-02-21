@@ -1,0 +1,112 @@
+.footer {
+    background-color: var(--footer-color);
+    padding: 40px 0px 20px;
+    ;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer__logo {
+    background-image: url(https://preetheme.com/liton/vegita/assets/img/logo.png);
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-desp {
+    margin: 20px 0;
+}
+
+.footer-social {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+// color
+.display-color {
+    color: var(--text-color-white);
+}
+
+//
+
+.head-title__text {
+    padding-bottom: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 114px;
+        height: 3px;
+        background: #7AA834;
+        left: 0;
+        margin: auto;
+        bottom: 0;
+    }
+}
+
+.footer-body-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-body-items {
+    margin-bottom: 5x;
+    line-height: 2.5rem;
+}
+
+.footer-body__link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--text-color-white);
+        padding-left: 5px;
+        border-left: 2px solid gray;
+        transition: all 0.3s ease;
+    }
+}
+
+.footer-body__social {
+    color: var(--popular-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+// Footer Bottom
+.footer-line {
+    border-top: 1px solid #93b561;
+    padding-top: 50px;
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-co {
+    margin-right: 5px;
+    font-weight: 600;
+}

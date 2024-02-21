@@ -1,0 +1,146 @@
+.primary {
+    background-color: var(--popular-color) !important;
+}
+
+.secondary {
+    background-color: #e0582a !important;
+
+    &:hover {
+        background-color: #fc7e2f !important;
+        box-shadow: 0 0 15px -2px rgb(0 0 0 / 50%);
+    }
+}
+
+.third {
+    background-color: #74bc1f !important;
+}
+
+.info {
+    background-color: #3c90ee !important;
+}
+
+.borderRadius {
+    border-radius: 18px !important;
+}
+
+.size_S {
+    position: relative;
+    min-height: 5px;
+    padding: 5px 10px !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size_M {
+    position: relative;
+    width: 112px;
+    min-height: 40px;
+    padding: 10px 20px !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size_L {
+    position: relative;
+    width: 206px;
+    min-height: 40px;
+    padding: 10px 40px !important;
+    margin: 0 !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.size_M,
+.size_L,
+.size_S {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.size_M:hover.before_M::before,
+.size_L:hover.before_L::before {
+    background-color: var(--popular-color) !important;
+    box-shadow: 0 0 60px 50px rgb(0 12 0 / 50%) !important;
+    z-index: -1;
+}
+
+.size_M:hover.after_M::after,
+.size_L:hover.after_L::after {
+    background-color: var(--popular-color) !important;
+    box-shadow: 0 0 15px -2px rgb(0 12 0 / 50%) !important;
+    z-index: -1;
+}
+
+.size_M:hover {
+    color: var(--text-color-white) !important;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in;
+    z-index: 2;
+}
+
+.size_L:hover {
+    color: var(--text-color-white) !important;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in;
+    z-index: 2;
+}
+
+
+.before_M::before,
+.before_L::before,
+.after_M::after,
+.after_L::after {
+    content: '';
+    background-color: green;
+    height: 90px;
+    width: 128px;
+    transform: rotate(25deg);
+    position: absolute;
+    transition: all 0.5s ease 0s;
+}
+
+.before_M::before {
+    left: -60%;
+    top: 65%;
+}
+
+.after_M::after {
+    left: 60%;
+    top: -150%;
+}
+
+.before_L::before {
+    left: -26%;
+    top: 66%;
+}
+
+.after_L::after {
+    left: 60%;
+    top: -170%;
+}
+
+.span__text {
+    color: var(--text-color-white) !important;
+    font-size: 1.6rem !important;
+}
+
+button.active svg {
+    color: red;
+}
+
+.interactice {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: var(--text-color-white) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+}

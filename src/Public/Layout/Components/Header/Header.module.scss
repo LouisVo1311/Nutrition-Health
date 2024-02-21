@@ -1,0 +1,134 @@
+.wrapper {
+    overflow: hidden;
+}
+
+.header {
+    height: var(--height-header);
+    margin-bottom: 20px;
+}
+
+.header-info {
+    height: var(--header-info);
+    background-color: transparent !important;
+}
+
+.header-nav-info {
+    justify-content: space-between;
+}
+
+.search-result {
+    width: 248px;
+}
+
+.nav-info__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover .nav-info__icon {
+        color: red;
+    }
+
+    &:hover .nav-info__text {
+        color: #333;
+    }
+}
+
+.nav-info__text,
+.nav-info__icon {
+    color: #8292a0;
+    font-size: 1.4rem;
+}
+
+.nav-info__text {
+    font-weight: 500;
+}
+
+.text-mar {
+    margin: 5px;
+}
+
+.nav-info__icon {
+    margin-right: 10px;
+}
+
+.nav-link {
+    margin-left: 20px;
+}
+
+
+// Header navigation
+.header-navigation {
+    height: var(--header-navigation);
+    padding: 0 15px !important;
+    color: var(--text-color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white !important;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
+}
+
+.header-nav-logo,
+.header-nav-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-menu {
+    padding: 0px 80px;
+}
+
+.nav-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-menu-page__title {
+    color: var(--text-color-black);
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-color-black);
+    }
+}
+
+.type-products {
+    width: 100%;
+    border: 1px solid #eee;
+    margin-top: 14px;
+    background-color: var(--text-color-white);
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.type-products-nav {
+    padding: 10px 0;
+    flex-direction: column !important;
+    list-style: none;
+}
+
+.type-products__items {
+    padding: 10px 20px;
+
+    &:first-child {
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
+
+.type-products__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color-black);
+
+    &:hover {
+        color: var(--popular-color);
+    }
+}

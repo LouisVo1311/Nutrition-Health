@@ -1,0 +1,130 @@
+// Slider
+.slider {
+    overflow: hidden;
+}
+
+.slider-image {
+    overflow: hidden;
+}
+
+.slider__img {
+    height: 450px;
+    width: 100%;
+}
+
+.slider-content {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.slider-content__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--text-color-white);
+}
+
+// Slider Items
+.items-product {
+    background-color: var(--text-color-white);
+    padding: 80px 0;
+}
+
+.items-intro {
+    overflow: hidden;
+}
+
+.items-intro-tiltle {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+// Banner
+.banner {
+    position: relative;
+    height: 453px;
+    margin-bottom: 80px;
+    background-image: url(https://preetheme.com/liton/vegita/assets/img/shop/timmer.jpg);
+    background-position: 68%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+    box-shadow: 0 -5px 10px #dcdcdc;
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+}
+
+.banner-content__title {
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--text-color-black);
+    padding-bottom: 40px;
+}
+
+// Contact
+.contact {
+    background-image: url(https://preetheme.com/liton/vegita/assets/img/about/time.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
+    z-index: 1;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #7ac124;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.contact-content__title {
+    color: var(--text-color-black);
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.contact-content__phone {
+    color: var(--text-color-white);
+    font-size: 34px;
+    letter-spacing: 4px;
+    font-family: 'Noto Serif', serif;
+}
+
+// News
+.news {
+    padding: 80px 0;
+    background-color: var(--text-color-white);
+}
+
+.items-new {
+    overflow: hidden;
+}
+
+.new-tiltle {
+    display: flex;
+    margin-bottom: 40px;
+}
